@@ -52,7 +52,7 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);colo
 <li>Ward configuration and its counters (see section 6)</li>
 <li>Your app preferences: theme, day start hour, reminder settings, sound settings</li>
 <li>Your display name, if you enter one</li>
-<li>If you create an email account inside Nordy: your email address, and a cryptographic hash of your password (see section 8)</li>
+<li>If you create an email account inside Nordy: your email address, and a cryptographic hash of your password (see section 9)</li>
 </ul>
 <p>Uninstalling Nordy removes this data from your device. Depending on your settings, a copy may exist in your own iCloud or iTunes device backup, which is controlled by you and by Apple, not by us.</p>
 <hr>
@@ -106,7 +106,20 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);colo
 </ul>
 <p>Because your content stays on your device, most of what you do in Nordy involves no processing by us at all.</p>
 <hr>
-<h2>8. How we protect information</h2>
+<h2>8. Canadian privacy law (PIPEDA)</h2>
+<p>We are a Canadian company, so the <strong>Personal Information Protection and Electronic Documents Act (PIPEDA)</strong> applies to us directly, alongside the substantially similar provincial laws in Alberta, British Columbia and Quebec.</p>
+<p>Our practices follow PIPEDA's ten fair information principles. In particular:</p>
+<ul>
+<li><strong>Accountability.</strong> SIXSIDE MARKETING INC. is accountable for the personal information under its control. Our contact for privacy matters is <strong>nordydevapp@gmail.com</strong>.</li>
+<li><strong>Identifying purposes and limiting collection.</strong> We collect only an email address and an account identifier, and only so that you can sign in again and recover a forgotten password. We do not collect your habits, focus history, streaks or Screen Time selections, because those never leave your device.</li>
+<li><strong>Consent.</strong> You provide your email address knowingly, when you choose to create an account. Nordy can be used without an account, and no personal information is collected in that case.</li>
+<li><strong>Limiting use, disclosure and retention.</strong> We do not sell, rent or trade personal information, and we do not use it for any purpose beyond those described in this policy. Deleting your account deletes it (section 11).</li>
+<li><strong>Accuracy, safeguards and openness.</strong> You may correct your email address at any time; safeguards are described in section 9; this policy is the openness requirement.</li>
+<li><strong>Individual access and challenging compliance.</strong> You may ask us what we hold about you, and you may challenge our handling of it, using the address above.</li>
+</ul>
+<p><strong>If you are not satisfied with our response, you may complain to the Office of the Privacy Commissioner of Canada</strong> at <a href="https://www.priv.gc.ca">priv.gc.ca</a>, or to your provincial privacy commissioner. Exercising this right costs you nothing and does not affect your use of Nordy.</p>
+<hr>
+<h2>9. How we protect information</h2>
 <ul>
 <li>Passwords for Nordy email accounts are never stored in readable form. Supabase stores only a salted hash. The copy kept on your device — which lets you sign in when you have no connection — is salted and stretched with <strong>PBKDF2-HMAC-SHA-256</strong>, and only the derived hash is written. Verification uses a comparison designed not to leak information through timing.</li>
 <li>Your session token is held in the device <strong>Keychain</strong>, which is encrypted by iOS and excluded from unencrypted backups.</li>
@@ -115,11 +128,11 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);colo
 </ul>
 <p>No method of storage or transmission is perfectly secure, and we cannot guarantee absolute security. Because your data lives on your device, <strong>the security of your device — its passcode, biometrics, and backups — is the most important protection</strong>, and it is under your control.</p>
 <hr>
-<h2>9. Retention</h2>
+<h2>10. Retention</h2>
 <p>On-device data is retained until you delete it in the app or uninstall Nordy.</p>
 <p>Your account record with Supabase — email address, display name, password hash — is retained until you delete your account. <strong>Settings → Delete account</strong> erases it both on your device and at Supabase; it is not recoverable afterwards. Verification and reset emails handled by Resend are retained by that service only as long as needed to deliver them and to guard against abuse.</p>
 <hr>
-<h2>10. Your rights</h2>
+<h2>11. Your rights</h2>
 <p>Depending on where you live, you may have the right to access, correct, delete, restrict or object to processing of your personal information, to data portability, and to withdraw consent. Residents of California and other US states with comparable laws may have rights to know, delete, correct, and to opt out of sale or sharing — <strong>we do not sell or share personal information, and we do not process it for cross-context behavioural advertising.</strong> We will not discriminate against you for exercising any right.</p>
 <p>For most data, you can exercise these rights directly and immediately:</p>
 <ul>
@@ -128,13 +141,13 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);colo
 </ul>
 <p>For anything held by us, contact <strong>nordydevapp@gmail.com</strong>. We will respond within the period required by applicable law (generally one month under the GDPR, 45 days under California law). You also have the right to complain to your local supervisory authority; in the UK this is the Information Commissioner's Office.</p>
 <hr>
-<h2>11. International transfers</h2>
+<h2>12. International transfers</h2>
 <p>Where information is processed outside your country — by <strong>Supabase</strong>, which hosts your account in the region named at [SUPABASE_REGION]; by <strong>Resend</strong>, which delivers our emails; by a sign-in provider you chose; or by Apple when you make a purchase — we rely on appropriate safeguards, including the European Commission's Standard Contractual Clauses and the UK Addendum where applicable.</p>
 <hr>
-<h2>12. Changes to this policy</h2>
+<h2>13. Changes to this policy</h2>
 <p>We may update this policy. If a change materially affects how your information is handled, we will raise it in the app before it takes effect and update the date at the top. Continuing to use Nordy after a change means you accept the updated policy.</p>
 <hr>
-<h2>13. Contact</h2>
+<h2>14. Contact</h2>
 <p>SIXSIDE MARKETING INC. 5 Sheppard Avenue West, Toronto, Ontario M2N 0G4, Canada</p>
 <p><strong>nordydevapp@gmail.com</strong></p>
 <p>[If you appoint an EU or UK representative under Art. 27 GDPR, name and address here.]</p>
