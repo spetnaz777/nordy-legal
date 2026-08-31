@@ -25,17 +25,16 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);colo
 </style>
 </head><body><main>
 <h1>Nordy — Privacy Policy</h1>
-<p><strong>Effective date:</strong> 22 August 2026</p>
-<p><strong>Last updated:</strong> 22 August 2026</p>
+<p><strong>Effective date:</strong> 31 August 2026</p>
+<p><strong>Last updated:</strong> 31 August 2026</p>
 <p>Nordy ("Nordy", "we", "us") is operated by SIXSIDE MARKETING INC., a corporation registered in Ontario, Canada (corporation number 1001318957), whose contact address is 5 Sheppard Avenue West, Toronto, Ontario M2N 0G4, Canada.</p>
 <p>Contact for any privacy question or request: <strong>nordydevapp@gmail.com</strong></p>
 <hr>
 <h2>1. The short version</h2>
-<p>Nordy is built to keep your data on your phone.</p>
+<p>Nordy keeps your data on your phone.</p>
 <p>Your habits, quests, focus sessions, XP and level, streaks, oaths, calendar entries and Ward (Screen Time) rules are stored <strong>on your device</strong>. They are not uploaded to us. We do not operate a server that receives, stores, or analyses your Nordy activity, and we cannot see it.</p>
 <p>We run <strong>no advertising, no tracking, no data brokers, and no third-party analytics SDKs</strong>. We do not sell or share your personal information, as those terms are defined under US state privacy laws. Our App Store privacy manifest declares no tracking, and that is accurate.</p>
-<p>Information leaves your device in three cases only: when you <strong>create an account with an email address and password</strong>, which our authentication provider stores so you can sign in again and reset a forgotten password (section 4.4); when <strong>you choose</strong> to sign in with Apple, Google, or Discord; and when you make a purchase, which Apple handles. Those are described in section 4.</p>
-<p><strong>What we hold about you is your email address and an account identifier — never your habits, your history, or anything you do inside the app.</strong></p>
+<p>Information leaves your device in two cases only: when <strong>you choose to sign in with Apple</strong>, and when you make a purchase, which Apple handles. Both are described in section 4. There is no Nordy account server: <strong>Sign in with Apple is the only account Nordy offers, and everything it gives us is stored on your device.</strong></p>
 <hr>
 <h2>2. Who this policy applies to</h2>
 <p>This policy applies to the Nordy iOS application and any page we publish at spetnaz777.github.io/nordy-legal.</p>
@@ -52,34 +51,26 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);colo
 <li>Ward configuration and its counters (see section 6)</li>
 <li>Your app preferences: theme, day start hour, reminder settings, sound settings</li>
 <li>Your display name, if you enter one</li>
-<li>If you create an email account inside Nordy: your email address, and a cryptographic hash of your password (see section 9)</li>
+<li>If you sign in with Apple: the account identifier Apple issues, plus the name and email address you approve at that moment (see section 4.1)</li>
 </ul>
 <p>Uninstalling Nordy removes this data from your device. Depending on your settings, a copy may exist in your own iCloud or iTunes device backup, which is controlled by you and by Apple, not by us.</p>
 <hr>
 <h2>4. What can leave your device, and only when you choose it</h2>
-<h3>4.1 Signing in with Apple, Google, or Discord</h3>
-<p>If you choose one of these, you are sent to that provider to authenticate. We never receive your password for those accounts.</p>
+<h3>4.1 Signing in with Apple</h3>
+<p>Sign in with Apple is the only account Nordy offers. If you choose it, you are sent to Apple to authenticate. We never receive your Apple ID password.</p>
 <ul>
-<li><strong>Sign in with Apple</strong> — we receive the identifier Apple issues, and the name and email address you approve. If you use Apple's Hide My Email, we only ever see the relay address.</li>
-<li><strong>Google</strong> — Nordy requests the <code>profile</code> and <code>email</code> scopes and reads your basic profile and email address from Google's userinfo endpoint.</li>
-<li><strong>Discord</strong> — Nordy requests the <code>identify</code> and <code>email</code> scopes and reads your basic account information and email address from Discord.</li>
+<li>We receive the identifier Apple issues for you, and the name and email address you approve. If you use Apple's Hide My Email, we only ever see the relay address.</li>
+<li>Apple sends the name and email <strong>only the first time</strong> you authorize Nordy; later sign-ins return only the identifier.</li>
+<li>What Nordy receives is stored <strong>on your device</strong> and used only to identify your account inside the app. <strong>Nothing is sent to a Nordy server, because there is none.</strong></li>
+<li>Your password for your Apple ID, and any reset of it, is handled entirely by Apple. Nordy never sees it and has nothing to reset.</li>
 </ul>
-<p>What Nordy receives is stored <strong>on your device</strong> and used to identify your account inside the app. Your use of those providers is governed by their own privacy policies, and their receipt of your authentication request is between you and them.</p>
+<p>Your use of Sign in with Apple is governed by Apple's own privacy policy.</p>
+<p>You can also <strong>continue as a guest</strong>, in which case no account of any kind is created and nothing in this section applies.</p>
 <h3>4.2 Purchases</h3>
 <p>Subscriptions and any other purchases are processed by <strong>Apple</strong> through the App Store. Nordy never receives, handles, or stores your payment card, billing address, or Apple ID credentials. We receive only the entitlement status needed to unlock paid features. Apple's handling of your purchase is governed by Apple's privacy policy.</p>
 <h3>4.3 Diagnostics</h3>
 <p>Nordy ships <strong>no third-party analytics or crash-reporting SDK</strong>. Product events exist in the code as named milestones but are written to the developer console in development builds only and are silent in the version you download. Nothing is transmitted.</p>
 <p>If we later add analytics or crash reporting, we will update this policy, name the provider, and — where the law requires consent — ask you first.</p>
-<h3>4.4 Your account</h3>
-<p>If you create an account with an email address and password, that account is held by <strong>Supabase</strong>, which provides our authentication service. This is what lets you sign in again on the same device and reset a password you have forgotten — neither is possible for an account that exists only on one phone.</p>
-<ul>
-<li><strong>What is sent:</strong> your email address, your chosen display name, and your password. Your password is transmitted over an encrypted connection and stored by Supabase as a salted hash; neither we nor Supabase can read it back.</li>
-<li><strong>What comes back:</strong> an account identifier and a session token, which is kept in your device's Keychain.</li>
-<li><strong>What is <em>not</em> sent:</strong> your habits, quests, focus sessions, streaks, oaths, calendar entries, Ward rules, and Screen Time selections. Those remain on your device, exactly as described in section 3. Signing in on a new device gives you your account, not your history.</li>
-</ul>
-<p><strong>Verification and reset emails</strong> are delivered by <strong>Resend</strong> on our behalf. To send them, Resend processes your email address and the message itself.</p>
-<p>Supabase and Resend act as our processors: they handle this information on our instructions and are not permitted to use it for their own purposes.</p>
-<p>If you create an account with Apple, Google, or Discord instead, or continue as a guest, no account is created with Supabase and nothing in this section applies to you.</p>
 <hr>
 <h2>5. Notifications</h2>
 <p>Nordy's reminders are <strong>local notifications</strong> scheduled on your device by the app itself. They are not push notifications, we do not operate a push server, and no notification content is transmitted to us. You can revoke notification permission at any time in iOS Settings, and you can turn individual reminders off inside Nordy.</p>
@@ -99,50 +90,49 @@ footer{margin-top:4rem;padding-top:1.25rem;border-top:1px solid var(--rule);colo
 <h2>7. Legal bases for processing (EEA and UK)</h2>
 <p>Where the GDPR or UK GDPR applies, we rely on:</p>
 <ul>
-<li><strong>Performance of a contract</strong> (Art. 6(1)(b)) — operating your account and providing the features you asked for.</li>
+<li><strong>Performance of a contract</strong> (Art. 6(1)(b)) — providing the features you asked for.</li>
 <li><strong>Legitimate interests</strong> (Art. 6(1)(f)) — keeping the app secure and preventing abuse. We have balanced this against your rights and it is limited to what is necessary.</li>
 <li><strong>Consent</strong> (Art. 6(1)(a)) — where you grant notification or Screen Time permission, and for any future optional processing. You may withdraw consent at any time.</li>
 <li><strong>Legal obligation</strong> (Art. 6(1)(c)) — where we must retain or disclose information by law.</li>
 </ul>
-<p>Because your content stays on your device, most of what you do in Nordy involves no processing by us at all.</p>
+<p>Because your content stays on your device and we operate no server, almost everything you do in Nordy involves no processing by us at all.</p>
 <hr>
 <h2>8. Canadian privacy law (PIPEDA)</h2>
 <p>We are a Canadian company, so the <strong>Personal Information Protection and Electronic Documents Act (PIPEDA)</strong> applies to us directly, alongside the substantially similar provincial laws in Alberta, British Columbia and Quebec.</p>
 <p>Our practices follow PIPEDA's ten fair information principles. In particular:</p>
 <ul>
 <li><strong>Accountability.</strong> SIXSIDE MARKETING INC. is accountable for the personal information under its control. Our contact for privacy matters is <strong>nordydevapp@gmail.com</strong>.</li>
-<li><strong>Identifying purposes and limiting collection.</strong> We collect only an email address and an account identifier, and only so that you can sign in again and recover a forgotten password. We do not collect your habits, focus history, streaks or Screen Time selections, because those never leave your device.</li>
-<li><strong>Consent.</strong> You provide your email address knowingly, when you choose to create an account. Nordy can be used without an account, and no personal information is collected in that case.</li>
-<li><strong>Limiting use, disclosure and retention.</strong> We do not sell, rent or trade personal information, and we do not use it for any purpose beyond those described in this policy. Deleting your account deletes it (section 11).</li>
-<li><strong>Accuracy, safeguards and openness.</strong> You may correct your email address at any time; safeguards are described in section 9; this policy is the openness requirement.</li>
-<li><strong>Individual access and challenging compliance.</strong> You may ask us what we hold about you, and you may challenge our handling of it, using the address above.</li>
+<li><strong>Identifying purposes and limiting collection.</strong> We operate no server. The only personal information that reaches Nordy is what Apple hands back when you sign in with Apple, and it stays on your device. We do not collect your habits, focus history, streaks or Screen Time selections.</li>
+<li><strong>Consent.</strong> You sign in with Apple knowingly, when you choose to. Nordy can be used without an account, and no personal information is involved in that case.</li>
+<li><strong>Limiting use, disclosure and retention.</strong> We do not sell, rent or trade personal information, and we do not use it for any purpose beyond those described in this policy. Deleting your account removes it from your device (section 10).</li>
+<li><strong>Accuracy, safeguards and openness.</strong> You may change your display name at any time; safeguards are described in section 9; this policy is the openness requirement.</li>
+<li><strong>Individual access and challenging compliance.</strong> You may ask us what we hold about you — in practice, nothing, since there is no server — and you may challenge our handling of it, using the address above.</li>
 </ul>
 <p><strong>If you are not satisfied with our response, you may complain to the Office of the Privacy Commissioner of Canada</strong> at <a href="https://www.priv.gc.ca">priv.gc.ca</a>, or to your provincial privacy commissioner. Exercising this right costs you nothing and does not affect your use of Nordy.</p>
 <hr>
 <h2>9. How we protect information</h2>
 <ul>
-<li>Passwords for Nordy email accounts are never stored in readable form. Supabase stores only a salted hash. The copy kept on your device — which lets you sign in when you have no connection — is salted and stretched with <strong>PBKDF2-HMAC-SHA-256</strong>, and only the derived hash is written. Verification uses a comparison designed not to leak information through timing.</li>
-<li>Your session token is held in the device <strong>Keychain</strong>, which is encrypted by iOS and excluded from unencrypted backups.</li>
-<li>Data in transit for the flows in section 4 uses <strong>HTTPS/TLS</strong>. The app ships with App Transport Security enabled and does not permit arbitrary insecure loads.</li>
+<li>Nordy stores <strong>no password</strong>, in any form. Sign in with Apple means Apple holds your credential; Nordy only ever receives an opaque account identifier.</li>
+<li>Data in transit for Sign in with Apple and for purchases uses <strong>HTTPS/TLS</strong>, handled by Apple's own frameworks. The app ships with App Transport Security enabled and does not permit arbitrary insecure loads.</li>
 <li>Nordy requests no microphone, camera, contacts, photos, precise location, or health data, and declares no such permissions.</li>
 </ul>
-<p>No method of storage or transmission is perfectly secure, and we cannot guarantee absolute security. Because your data lives on your device, <strong>the security of your device — its passcode, biometrics, and backups — is the most important protection</strong>, and it is under your control.</p>
+<p>No method of storage is perfectly secure, and we cannot guarantee absolute security. Because your data lives on your device, <strong>the security of your device — its passcode, biometrics, and backups — is the most important protection</strong>, and it is under your control.</p>
 <hr>
 <h2>10. Retention</h2>
 <p>On-device data is retained until you delete it in the app or uninstall Nordy.</p>
-<p>Your account record with Supabase — email address, display name, password hash — is retained until you delete your account. <strong>Settings → Delete account</strong> erases it both on your device and at Supabase; it is not recoverable afterwards. Verification and reset emails handled by Resend are retained by that service only as long as needed to deliver them and to guard against abuse.</p>
+<p>There is no account record held on a server. <strong>Settings → Delete account</strong> erases your account and everything on it from your device; it is not recoverable afterwards. If you later sign in with Apple again, a fresh account is created.</p>
 <hr>
 <h2>11. Your rights</h2>
 <p>Depending on where you live, you may have the right to access, correct, delete, restrict or object to processing of your personal information, to data portability, and to withdraw consent. Residents of California and other US states with comparable laws may have rights to know, delete, correct, and to opt out of sale or sharing — <strong>we do not sell or share personal information, and we do not process it for cross-context behavioural advertising.</strong> We will not discriminate against you for exercising any right.</p>
 <p>For most data, you can exercise these rights directly and immediately:</p>
 <ul>
-<li><strong>Delete everything</strong> — Settings → Delete account, inside Nordy, which erases your app data from the device <em>and</em> deletes your account record at Supabase.</li>
+<li><strong>Delete everything</strong> — Settings → Delete account, inside Nordy, which erases your account and all app data from the device.</li>
 <li><strong>Correct or export</strong> — edit any entry in the app; contact us if you need an export.</li>
 </ul>
-<p>For anything held by us, contact <strong>nordydevapp@gmail.com</strong>. We will respond within the period required by applicable law (generally one month under the GDPR, 45 days under California law). You also have the right to complain to your local supervisory authority; in the UK this is the Information Commissioner's Office.</p>
+<p>For anything else, contact <strong>nordydevapp@gmail.com</strong>. We will respond within the period required by applicable law (generally one month under the GDPR, 45 days under California law). You also have the right to complain to your local supervisory authority; in the UK this is the Information Commissioner's Office.</p>
 <hr>
 <h2>12. International transfers</h2>
-<p>Where information is processed outside your country — by <strong>Supabase</strong>, which hosts your account in Canada (Central); by <strong>Resend</strong>, which delivers our emails; by a sign-in provider you chose; or by Apple when you make a purchase — we rely on appropriate safeguards, including the European Commission's Standard Contractual Clauses and the UK Addendum where applicable.</p>
+<p>The only information that leaves your device goes to <strong>Apple</strong> — when you sign in with Apple, and when you make a purchase. Apple's processing, including any cross-border transfer, is governed by Apple's own privacy policy and safeguards. We transfer nothing ourselves, because we operate no server.</p>
 <hr>
 <h2>13. Changes to this policy</h2>
 <p>We may update this policy. If a change materially affects how your information is handled, we will raise it in the app before it takes effect and update the date at the top. Continuing to use Nordy after a change means you accept the updated policy.</p>
